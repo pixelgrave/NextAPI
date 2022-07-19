@@ -17,10 +17,10 @@ namespace Common
 
             var factory = new ConnectionFactory()
             {
-                HostName = "192.168.1.5",
+                HostName = "localhost",
                 Port = 5672,
-                UserName = "dave",
-                Password = "123456"
+                UserName = "guest",
+                Password = "guest"
             };
             var connection = factory.CreateConnection();
             var channel = connection.CreateModel();
@@ -39,10 +39,10 @@ namespace Common
 
             var factory = new ConnectionFactory()
             {
-                HostName = "192.168.1.5",
+                HostName = "localhost",
                 Port = 5672,
-                UserName = "dave",
-                Password = "123456"
+                UserName = "guest",
+                Password = "guest"
             };
             var connection = factory.CreateConnection();
             var channel = connection.CreateModel();

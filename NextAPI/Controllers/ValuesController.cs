@@ -28,6 +28,10 @@ namespace NextAPI.Controllers
         // POST api/values
         public void Post([FromBody]string value)
         {
+            Console.Write(value);
+            var myMessage = new RabbitMessage();
+            myMessage.Name = value;
+            RabbitProducer.sendSingleMessage(myMessage);
         }
 
         // PUT api/values/5
